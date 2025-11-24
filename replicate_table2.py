@@ -44,6 +44,8 @@ from fasttext_acc import (
 from flores200_loader import Flores200Loader
 from config import MODEL_CONFIGS, LANGUAGE_NAMES, LANGUAGE_SHORT
 
+# Prompt format from paper Section 4.3 for Table 2:
+# "Translate an English sentence into a target language. English: {source text} Target language:."
 prompt_func = lambda eng: f"Translate an English sentence into a target language. English: {eng} Target language:"
 
 

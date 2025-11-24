@@ -24,7 +24,7 @@ The paper proposes a training-free method to identify and manipulate language-sp
 
 3. **Evaluation** (`fasttext_acc.py`)
    - ACC: Language detection accuracy using fastText (threshold=0.5)
-   - BLEU: Translation quality on successful samples
+   - BLEU: Translation quality on sample having fastext correctly predicted the target lang
    - Composite: ACC * BLEU
 
 ### Data
@@ -96,17 +96,6 @@ Number of shared dimensions between language pairs:
 ### Table 2: Multilingual Generation Control
 
 Results using generic prompt format: "Translate an English sentence into a target language. English: {source text} Target language:"
-
-#### Llama2-7B Results
-
-| Language | Setting | ACC | BLEU | Composite | Paper ACC | Paper BLEU | Paper A*B |
-|----------|---------|-----|------|-----------|-----------|------------|-----------|
-| French | Monolingual | - | - | - | 98.3 | 23.4 | 23.0 |
-| French | Parallel | - | - | - | 99.1 | 22.7 | 22.5 |
-| German | Monolingual | - | - | - | 97.3 | 19.4 | 18.9 |
-| German | Parallel | - | - | - | 98.8 | 18.3 | 18.1 |
-
-(Results pending due to computational constraints)
 
 #### Llama2-13B Results
 
