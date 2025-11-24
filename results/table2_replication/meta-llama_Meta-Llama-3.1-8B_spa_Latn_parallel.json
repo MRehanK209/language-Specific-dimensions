@@ -1,0 +1,41 @@
+{
+  "model": "meta-llama/Meta-Llama-3.1-8B",
+  "language": "spa_Latn",
+  "language_short": "Es",
+  "setting": "parallel",
+  "acc": 0.28,
+  "bleu": 2.9804157669476403,
+  "composite": 0.8327544418743829,
+  "intervention_layer": 27,
+  "alpha": 0.8,
+  "num_runs": 3,
+  "all_run_results": [
+    {
+      "run": 0,
+      "dataset": "FLORES-200",
+      "acc": 0.29,
+      "bleu": 2.665415688797451,
+      "composite": 0.7729705497512607,
+      "num_successful": 29,
+      "num_total": 100
+    },
+    {
+      "run": 1,
+      "dataset": "FLORES-200",
+      "acc": 0.27,
+      "bleu": 3.194007550084325,
+      "composite": 0.8623820385227677,
+      "num_successful": 27,
+      "num_total": 100
+    },
+    {
+      "run": 2,
+      "dataset": "FLORES-200",
+      "acc": 0.28,
+      "bleu": 3.081824061961144,
+      "composite": 0.8629107373491204,
+      "num_successful": 28,
+      "num_total": 100
+    }
+  ]
+}
