@@ -97,6 +97,21 @@ Number of shared dimensions between language pairs:
 
 Results using generic prompt format: "Translate an English sentence into a target language. English: {source text} Target language:"
 
+#### Llama2-7B Results
+
+| Language | Setting | ACC | BLEU | Composite | Paper ACC | Paper BLEU | Paper A*B |
+|----------|---------|-----|------|-----------|-----------|------------|-----------|
+| French | Monolingual | 0.55 | 18.5 | 10.2 | 98.3 | 23.4 | 23.0 |
+| French | Parallel | 0.55 | 26.5 | 14.7 | 99.1 | 22.7 | 22.5 |
+| German | Monolingual | 0.48 | 16.9 | 7.9 | 97.3 | 19.4 | 18.9 |
+| German | Parallel | 0.48 | 16.9 | 7.9 | 98.8 | 18.3 | 18.1 |
+| Spanish | Monolingual | 0.60 | 13.1 | 7.9 | 97.0 | 18.2 | 17.7 |
+| Spanish | Parallel | 0.41 | 15.6 | 6.4 | 96.1 | 19.2 | 18.4 |
+| Chinese | Monolingual | 0.28 | 0.0 | 0.0 | 82.8 | 14.9 | 12.3 |
+| Chinese | Parallel | 0.22 | 0.0 | 0.0 | 84.3 | 15.2 | 12.8 |
+| Japanese | Monolingual | 0.10 | 0.0 | 0.0 | 95.9 | 18.4 | 17.6 |
+| Japanese | Parallel | 0.20 | 0.0 | 0.0 | 94.4 | 18.0 | 17.0 |
+
 #### Llama2-13B Results
 
 | Language | Setting | ACC | BLEU | Composite | Paper ACC | Paper BLEU | Paper A*B |
@@ -133,7 +148,7 @@ Results using generic prompt format: "Translate an English sentence into a targe
 
 1. **Dimension Identification Works**: Our Figure 3, 4, 5, and Table 1 results closely match the paper's findings, confirming that language-specific dimensions can be identified and show consistent properties across languages.
 
-2. **Intervention Effectiveness Issue**: Table 2 results show significantly lower ACC values (5-45%) compared to paper (90-99%). However, BLEU scores on successful samples are comparable or higher, indicating that when intervention works, translation quality is good.
+2. **Intervention Effectiveness Issue**: Table 2 results show significantly lower ACC values compared to paper (90-99%). Llama-2-7B achieved higher ACC (10-60%) than Llama-2-13B and Llama3.1-8B (5-45%), but all remain substantially below paper's reported values. However, BLEU scores on successful samples are comparable or higher, indicating that when intervention works, translation quality is good.
 
 ### Discrepancies and Potential Causes
 
