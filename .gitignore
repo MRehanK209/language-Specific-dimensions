@@ -1,0 +1,54 @@
+README.md
+results/table2_replication/
+
+# Data and models (too large for git)
+data/
+models/
+
+# Archive and old code
+archive/
+results/llama-2-7b-analysis*/
+results/results/
+
+# Logs
+*.log
+eval_log.txt
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# Jupyter
+*.ipynb
+.ipynb_checkpoints/
+
+# Papers (copyright)
+*.pdf
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.cursor/
+.env
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+

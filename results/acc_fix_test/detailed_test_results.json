@@ -1,0 +1,68 @@
+{
+  "config": {
+    "model": "meta-llama/Llama-2-7b-hf",
+    "language": "fra_Latn",
+    "num_identification": 10,
+    "num_test": 5,
+    "intervention_layer": 20,
+    "alpha": 0.4,
+    "top_k": 400
+  },
+  "metrics": {
+    "acc": 1.0,
+    "bleu": 26.536889051049673,
+    "composite": 26.536889051049673
+  },
+  "samples": [
+    {
+      "sample_idx": 0,
+      "english": "The strain of bird flu lethal to humans, H5N1, has been confirmed to have infected a dead wild duck, found on Monday, in marshland near Lyon in the east of France.",
+      "reference": "La souche de la grippe aviaire mortelle pour l'homme, H5N1, a été confirmée comme ayant infecté un canard sauvage mort, trouvé lundi, dans un marais près de Lyon dans l'est de la France.",
+      "generated": "La souche de grippe aviaire mortelle pour l'homme, H5N1, a été confirmée avoir infecté un canard sauvage mort, trouvé le mardi, dans les marécages près",
+      "detected_lang": "fr",
+      "confidence": 0.9932278394699097,
+      "target_lang": "fr",
+      "is_correct": true
+    },
+    {
+      "sample_idx": 1,
+      "english": "That didn't seem to make sense to me; it certainly wasn't fair.",
+      "reference": "Cela ne me semblait pas logique ; ce n'était certainement pas juste.",
+      "generated": "Ça ne me semblait pas juste.",
+      "detected_lang": "fr",
+      "confidence": 0.9963575005531311,
+      "target_lang": "fr",
+      "is_correct": true
+    },
+    {
+      "sample_idx": 2,
+      "english": "It is reported that some 9400 homes in the region are without water and approximately 100 without electricity.",
+      "reference": "On signale qu'environ 9 400 habitations de la région sont privées d'eau, et qu'environ 100 sont privées d'électricité.",
+      "generated": "Il est rapporté que 9400 foyers dans la région sont sans eau et environ 100 sans électricité.",
+      "detected_lang": "fr",
+      "confidence": 0.9983822703361511,
+      "target_lang": "fr",
+      "is_correct": true
+    },
+    {
+      "sample_idx": 3,
+      "english": "Middle order batsmen, Sachin Tendulkar and Rahul Dravid, performed well and made a hundred-run partnership.",
+      "reference": "Les batteurs d'ordre moyen, Sachin Tendulkar et Rahul Dravid, ont obtenu de bons résultats et ont accompli un century ensemble.",
+      "generated": "Les batteurs de milieu, Sachin Tendulkar et Rahul Dravid, ont bien joué et ont fait un partenariat de 100.",
+      "detected_lang": "fr",
+      "confidence": 0.9845306277275085,
+      "target_lang": "fr",
+      "is_correct": true
+    },
+    {
+      "sample_idx": 4,
+      "english": "Television reports show white smoke coming from the plant.",
+      "reference": "Les reportages télévisés montrent de la fumée blanche provenant de l'usine.",
+      "generated": "Les télégrammes montrent du fumée blanche sortant de l'usine.",
+      "detected_lang": "fr",
+      "confidence": 0.9817856550216675,
+      "target_lang": "fr",
+      "is_correct": true
+    }
+  ]
+}
