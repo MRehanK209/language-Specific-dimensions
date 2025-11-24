@@ -281,7 +281,3 @@ Original Paper:
   year={2024}
 }
 ```
-
-## Acknowledgments
-
-This replication study was conducted as part of research at LAMARR Institute. The implementation follows the methodology described in the paper while highlighting areas where additional clarification or code release would benefit reproducibility.
